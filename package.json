@@ -1,0 +1,26 @@
+{
+  "name": "openfixturelibrary",
+  "version": "1.0.1",
+  "description": "A free library of DMX enabled devices",
+  "main": "npm/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielfar-theatretech/OpenFixtureLibrary.git"
+  },
+  "keywords": [
+    "fixture",
+    "dmx",
+    "free",
+    "open",
+    "library"
+  ],
+  "author": "Inanis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielfar-theatretech/OpenFixtureLibrary/issues"
+  },
+  "homepage": "https://github.com/danielfar-theatretech/OpenFixtureLibrary#readme"
+}

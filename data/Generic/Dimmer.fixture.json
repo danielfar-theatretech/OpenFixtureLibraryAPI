@@ -1,0 +1,19 @@
+{
+	"id": "fxtr-9d409451-f31d-493b-ba10-36742ad1a9d3",
+	"brand": "Generic",
+	"name": "Dimmer",
+	"channels": [
+		{
+			"name": "Intensity",
+			"type": "INTENSITY"
+		}
+	],
+	"channelModes": [
+		{
+			"count": 1,
+			"channels": [
+				0
+			]
+		}
+	]
+}
