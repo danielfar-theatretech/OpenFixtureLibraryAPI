@@ -1,3 +1,67 @@
 {
-    
+    "id": "ftxur-4ebd1622-3063-4c5a-ae0a-9eb866f5f3e4",
+    "brand": "Equinox",
+    "name": "Fusion Spot MKII",
+    "channels": [
+        {
+            "name": "Pan",
+            "type": "POS-PAN"
+        },
+        {
+            "name": "Fine Pan",
+            "type": "POS-PAN-FINE"
+        },
+        {
+            "name": "Tilt",
+            "type": "POS-TILT"
+        },
+        {
+            "name": "Fine Tilt",
+            "type": "POS-TILT-FINE"
+        },
+        {
+            "name": "Colour",
+            "type": "COLOUR_WHEEL",
+            "bounds": [
+                {
+                    "name": "White",
+                    "initial": 0,
+                    "final": 7
+                },
+                {
+                    "name": "Light Blue",
+                    "initial": 8,
+                    "final": 14
+                },
+                {
+                    "name": "Pink",
+                    "initial": 15,
+                    "final": 21
+                }
+            ]
+        }
+    ],
+    "channelModes": [
+        {
+            "count": 1,
+            "channels": [
+                0
+            ]
+        },
+        {
+            "count": 10,
+            "channels": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        }
+    ]
 }

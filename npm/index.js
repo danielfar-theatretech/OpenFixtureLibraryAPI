@@ -1,41 +1,43 @@
-const fs = require("fs");
-const path = require("path");
-
-const fixturesObj = {};
-
-const fixtures = []
-const brands = [];
-
-const brandDir = fs.readdirSync(path.join(__dirname, "..", "data"));
-brandDir.forEach((dir) => {
-	fixturesObj[dir] = {};
-	if (dir.endsWith(".brand.json")) {
-        const brandFile = require(path.join(__dirname, "..", "data", dir));
+"use strict";
+exports.__esModule = true;
+exports.findFixturesByName = exports.findFixturesByBrand = exports.brandList = exports.fixtureList = exports.Fixtures = void 0;
+var fs = require("fs");
+var path = require("path");
+var fixturesObj = {};
+var fixtures = [];
+var brands = [];
+var brandDir = fs.readdirSync(path.join(__dirname, "..", "data"));
+brandDir.forEach(function (dir) {
+    fixturesObj[dir] = {};
+    if (dir.endsWith(".brand.json")) {
+        var brandFile = require(path.join(__dirname, "..", "data", dir));
         brands.push(brandFile);
-	} else {
-		const fixtureFile = fs.readdirSync(path.join(__dirname, "..", "data", dir));
-		fixtureFile.forEach((ff) => {
-			if (ff.endsWith(".fixture.json")) {
-				try {
-					const fixture = require(path.join(__dirname, "..", "data", dir, ff));
+    }
+    else {
+        var fixtureFile = fs.readdirSync(path.join(__dirname, "..", "data", dir));
+        fixtureFile.forEach(function (ff) {
+            if (ff.endsWith(".fixture.json")) {
+                try {
+                    var fixture = require(path.join(__dirname, "..", "data", dir, ff));
                     fixturesObj[dir][fixture.name] = fixture;
                     fixtures.push(fixture);
-				} catch (e) {
-					console.warn(`Failed to parse JSON file at ${ff}`);
-				}
-			}
-		});
-	}
+                }
+                catch (e) {
+                    console.warn("Failed to parse JSON file at " + ff);
+                }
+            }
+        });
+    }
 });
-
-module.exports.Fixtures = fixturesObj;
-module.exports.fixtureList = fixtures;
-module.exports.brandList = brands;
-
-module.exports.findFixturesByBrand = (brandName) => {
-	return fixtures.filter((elt) => elt.brand == brandName);
+exports.Fixtures = fixturesObj;
+exports.fixtureList = fixtures;
+exports.brandList = brands;
+var findFixturesByBrand = function (brandName) {
+    return fixtures.filter(function (elt) { return elt.brand == brandName; });
 };
-
-module.exports.findFixturesByName = (fixtureName) => {
-    return fixtures.filter((elt) => elt.name == fixtureName);
+exports.findFixturesByBrand = findFixturesByBrand;
+var findFixturesByName = function (fixtureName) {
+    return fixtures.filter(function (elt) { return elt.name == fixtureName; });
 };
+exports.findFixturesByName = findFixturesByName;
+//# sourceMappingURL=index.js.map

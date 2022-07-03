@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+		"module": "CommonJS",
+        "moduleResolution": "Node",
+		"skipLibCheck": true,
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "outDir": "npm",
+        "resolveJsonModule": true,
+        "removeComments": true,
+        "declaration": true,
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        }
+    },
+    "include": [
+        "src/index.ts"
+    ]
+}
