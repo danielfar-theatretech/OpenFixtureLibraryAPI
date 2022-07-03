@@ -1,11 +1,14 @@
 {
   "name": "openfixturelibrary",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A free library of DMX enabled devices",
   "main": "npm/index.js",
   "types": "npm/index.d.js",
   "scripts": {
-    "prepublish": "tsc",
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "publish": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +30,8 @@
   "homepage": "https://github.com/danielfar-theatretech/OpenFixtureLibrary#readme",
   "devDependencies": {
     "@types/node": "^18.0.1"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
   }
 }

@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 
+export * from "./types";
 import {Profile, Brand} from "./types";
 
 const fixturesObj: { [key: string]: { [key: string]: Profile; }; } = {};
