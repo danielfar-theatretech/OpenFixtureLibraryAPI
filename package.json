@@ -1,14 +1,12 @@
 {
   "name": "openfixturelibrary",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A free library of DMX enabled devices",
-  "main": "npm/index.js",
-  "types": "npm/index.d.js",
+  "main": "src/index.ts",
+  "types": "typings/index.d.ts",
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
-    "prepublish": "npm run build",
-    "publish": "npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,5 +31,9 @@
   },
   "dependencies": {
     "typescript": "^4.7.4"
-  }
+  },
+  "files": [
+      "out/",
+      "data/"
+    ]
 }

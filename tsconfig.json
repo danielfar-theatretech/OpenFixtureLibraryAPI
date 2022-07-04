@@ -9,7 +9,7 @@
         "emitDecoratorMetadata": true,
         "sourceMap": true,
         "baseUrl": ".",
-        "outDir": "npm",
+        "outDir": "out",
         "resolveJsonModule": true,
         "removeComments": true,
         "declaration": true,
