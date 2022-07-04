@@ -1,6 +1,6 @@
 {
   "name": "openfixturelibrary",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A free library of DMX enabled devices",
   "main": "src/index.ts",
   "types": "typings/index.d.ts",
@@ -33,7 +33,7 @@
     "typescript": "^4.7.4"
   },
   "files": [
-      "out/",
-      "data/"
-    ]
+    "out/",
+    "data/"
+  ]
 }
