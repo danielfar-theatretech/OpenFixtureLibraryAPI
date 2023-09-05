@@ -69,18 +69,15 @@ Of course, this repository won't be able to contain every fixture ever! So I'll 
 
 This library was built by hand, by real people (so there might be a few mistakes). Feel free to suggest a change or open an issue if you spot any.
 
-There are no libraries or frameworks used, it's just pure json data. An NPM module and online API will be available in the near future.
+The data is in JSON format but the api was built with these tools:
+
+ - express
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-* Using NPM
-
-  ```sh
-  npm install openfixturelibrary
-  ```
 
 * Directly from Github
 
@@ -95,13 +92,12 @@ There are no libraries or frameworks used, it's just pure json data. An NPM modu
 
 All profiles are separated into their own files, so you can use them as-is if you wish.
 
-Or if you are using the NPM module, fixtures are contained within objects named after the manufacturer.
+Or if you are using the API:
 
 * e.g.
   
 ```js
-const OpenFixtureLibrary = require("openfixturelibrary");
-const myProfile = OpenFixtureLibrary.Fixtures.Equinox.FusionSpotMKII;
+
 ```
 
 <!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->

@@ -1,11 +1,16 @@
 {
     "id": "fxtr-4ebd1622-3063-4c5a-ae0a-9eb866f5f3e4",
-    "brand": "Equinox",
+    "brand": "brnd-340bbc52-93fb-48de-90e5-dab02615ac99",
     "name": "Fusion Spot MKII",
+    "tags": [],
     "channels": [
         {
             "name": "Pan",
-            "type": "POS-PAN"
+            "type": "POS-PAN",
+            "range": {
+                "initial": 0,
+                "final": 540
+            }
         },
         {
             "name": "Fine Pan",
@@ -13,7 +18,11 @@
         },
         {
             "name": "Tilt",
-            "type": "POS-TILT"
+            "type": "POS-TILT",
+            "range": {
+                "initial": 0,
+                "final": 270
+            }
         },
         {
             "name": "Fine Tilt",
@@ -21,7 +30,7 @@
         },
         {
             "name": "Colour",
-            "type": "COLOUR_WHEEL",
+            "type": "COLOUR-WHEEL",
             "bounds": [
                 {
                     "name": "White",
@@ -39,6 +48,33 @@
                     "final": 21
                 }
             ]
+        },
+        {
+            "name": "Gobo",
+            "type": "GOBO_WHEEL",
+            "bounds": [
+                {
+                    "name": "Gobo 1 (open)",
+                    "initial": 0,
+                    "final": 7
+                }
+            ]
+        },
+        {
+            "name": "Shutter",
+            "type": "SHUTTER"
+        },
+        {
+            "name": "Pan/Tilt Speed",
+            "type": "FUNCTION"
+        },
+        {
+            "name": "Function",
+            "type": "FUNCTION"
+        },
+        {
+            "name": "Dimmer",
+            "type": "INTENSITY"
         }
     ],
     "channelModes": [
@@ -63,5 +99,8 @@
                 9
             ]
         }
-    ]
+    ],
+    "legacy": {
+        "brand": "Equinox"
+    }
 }

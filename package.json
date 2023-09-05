@@ -2,13 +2,8 @@
   "name": "openfixturelibrary",
   "version": "1.0.6",
   "description": "A free library of DMX enabled devices",
-  "main": "src/index.ts",
-  "types": "typings/index.d.ts",
-  "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "src/index.js",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/danielfar-theatretech/OpenFixtureLibrary.git"
@@ -26,14 +21,10 @@
     "url": "https://github.com/danielfar-theatretech/OpenFixtureLibrary/issues"
   },
   "homepage": "https://github.com/danielfar-theatretech/OpenFixtureLibrary#readme",
-  "devDependencies": {
-    "@types/node": "^18.0.1"
-  },
   "dependencies": {
-    "typescript": "^4.7.4"
-  },
-  "files": [
-    "out/",
-    "data/"
-  ]
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "winston": "^3.8.1"
+  }
 }
